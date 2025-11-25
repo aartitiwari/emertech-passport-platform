@@ -29,8 +29,8 @@ export const WhatIsDPP = () => {
           </div>
 
           <div className="text-center space-y-4 p-8 rounded-xl bg-card border border-border hover:shadow-lg transition-all">
-            <div className="w-16 h-16 mx-auto bg-secondary/10 rounded-full flex items-center justify-center">
-              <LifeBuoy className="w-8 h-8 text-secondary" />
+            <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
+              <LifeBuoy className="w-8 h-8 text-primary" />
             </div>
             <h3 className="text-xl font-semibold text-foreground">Lifecycle Information</h3>
             <p className="text-muted-foreground">
