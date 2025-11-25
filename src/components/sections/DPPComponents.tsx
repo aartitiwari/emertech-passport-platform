@@ -63,14 +63,22 @@ export const DPPComponents = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {components.map((component, index) => {
             const Icon = component.icon;
+            const colorMap = {
+              'primary': 'bg-primary/10 text-primary',
+              'secondary': 'bg-secondary/10 text-secondary',
+              'growth-green': 'bg-growth-green/10 text-growth-green',
+              'trust-blue': 'bg-trust-blue/10 text-trust-blue'
+            };
+            const colorClasses = colorMap[component.color as keyof typeof colorMap];
+            
             return (
               <div 
                 key={index}
                 className="p-8 rounded-xl bg-card border border-border hover:shadow-xl transition-all duration-300"
               >
                 <div className="flex items-start gap-4 mb-4">
-                  <div className={`w-14 h-14 bg-${component.color}/10 rounded-lg flex items-center justify-center flex-shrink-0`}>
-                    <Icon className={`w-7 h-7 text-${component.color}`} />
+                  <div className={`w-14 h-14 rounded-lg flex items-center justify-center flex-shrink-0 ${colorClasses.split(' ')[0]}`}>
+                    <Icon className={`w-7 h-7 ${colorClasses.split(' ')[1]}`} />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground pt-2">
                     {component.title}
