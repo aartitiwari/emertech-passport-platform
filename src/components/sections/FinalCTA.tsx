@@ -3,7 +3,7 @@ import { Calendar, MessageCircle } from "lucide-react";
 
 export const FinalCTA = () => {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-br from-primary via-trust-blue to-secondary relative overflow-hidden">
+    <section className="py-20 md:py-32 bg-gradient-to-br from-primary via-primary/90 to-deep-ocean relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl" />

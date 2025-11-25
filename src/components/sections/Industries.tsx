@@ -62,9 +62,14 @@ export const Industries = () => {
     <section className="py-20 md:py-28 bg-gradient-to-b from-background to-soft-sky">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-6 mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-            Purpose-Built for Each ESPR-Targeted Industry
-          </h2>
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+              Purpose-Built for Each ESPR-Targeted Industry
+            </h2>
+            <span className="px-3 py-1 border-2 border-primary rounded-full text-xs font-semibold text-primary">
+              2025-2027
+            </span>
+          </div>
           <p className="text-lg text-muted-foreground">
             Deep industry expertise meets regulatory requirements — tailored solutions for the sectors most impacted by Digital Product Passport mandates.
           </p>
@@ -79,8 +84,8 @@ export const Industries = () => {
                 className="p-8 rounded-xl bg-card border border-border hover:border-secondary/50 hover:shadow-xl transition-all duration-300 group"
               >
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
-                    <Icon className="w-7 h-7 text-secondary" />
+                  <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <Icon className="w-7 h-7 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">
                     {industry.title}
@@ -89,7 +94,7 @@ export const Industries = () => {
                 <ul className="space-y-3">
                   {industry.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-2 text-muted-foreground">
-                      <span className="text-secondary mt-1 flex-shrink-0">✓</span>
+                      <span className="text-growth-green mt-1 flex-shrink-0">✓</span>
                       <span>{feature}</span>
                     </li>
                   ))}

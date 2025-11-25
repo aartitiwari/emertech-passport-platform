@@ -18,7 +18,7 @@ export const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
               Digital Product Passport Platform for{" "}
               <span className="text-primary">ESPR</span> &{" "}
-              <span className="text-secondary">Global Sustainability</span> Compliance
+              <span className="text-growth-green">Global Sustainability</span> Compliance
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
