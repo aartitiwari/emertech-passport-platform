@@ -22,7 +22,7 @@ export const DPPComponents = () => {
         "Logistics data",
         "Transformation events"
       ],
-      color: "secondary"
+      color: "primary"
     },
     {
       icon: Leaf,
